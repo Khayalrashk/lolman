@@ -10,8 +10,7 @@ from config import BANNED_USERS
 
                 
 @app.on_message(
-    command(["مطور سورس","المطورين","مطورين"])
-    & ~filters.edited
+    command(["سورس","السورس"])
 )
 async def huhh(client: Client, message: Message):
     await message.reply_photo(

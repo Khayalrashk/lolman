@@ -10,7 +10,7 @@ from config import BANNED_USERS
 
                 
 @app.on_message(
-    command(["مطورين سي ار","المطورين","مطورين","مطورين dark"])
+    command(["مطور سورس","المطورين","مطورين"])
     & ~filters.edited
 )
 async def huhh(client: Client, message: Message):

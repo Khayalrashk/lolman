@@ -1,8 +1,7 @@
 import random
 import string
-from ast import ExceptHandler
-from strings.random import command
-from from pyrogram import filters
+
+from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
@@ -24,7 +23,6 @@ from AnonXMusic.utils.inline import (
 from AnonXMusic.utils.logger import play_logs
 from AnonXMusic.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
-
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 

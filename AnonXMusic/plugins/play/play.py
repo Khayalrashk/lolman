@@ -24,7 +24,7 @@ from AnonXMusic.utils.logger import play_logs
 from AnonXMusic.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 # Command
-PLAY_COMMAND =command("PLAY_COMMAND")
+PLAY_COMMAND =get_command("PLAY_COMMAND")'
 
 
 @app.on_message(

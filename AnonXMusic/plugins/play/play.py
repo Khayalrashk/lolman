@@ -23,23 +23,27 @@ from AnonXMusic.utils.inline import (
 from AnonXMusic.utils.logger import play_logs
 from AnonXMusic.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
+from AnonXMusic.core.call import Anony
+
+
 
 
 @app.on_message(
-    filters.command( 
-        [ 
-            "play", 
-            "vplay", 
-            "تشغيل",
+    filters.command(
+        [
+            "play",
             "شغل", 
-            "فيديو", 
-            "playforce", 
-            "vplayforce", 
-            "cplayforce", 
-            "cvplayforce", 
-        ],
-        ""
+            "تشغيل", 
+            "vplay",
+            "cplay",
+            "cvplay",
+            "playforce",
+            "vplayforce",
+            "cplayforce",
+            "cvplayforce",
+        ]
     )
+    & filters.group
     & ~BANNED_USERS
 )
 @PlayWrapper

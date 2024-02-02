@@ -25,7 +25,7 @@ LOGGER_ID = int(getenv("OWNER_ID", ""))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 5675627801))
+OWNER_ID = int(getenv("OWNER_ID", 956893993))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -35,7 +35,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/o0ooo0oo/arab1",
+    "https://github.com/oreopr0/lolman",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
